@@ -1,0 +1,15 @@
+#includestdio.h
+int main()
+{
+ int c[3],i,sum=0,x,p;
+ scanf("%s",&c);
+ x=c[0];
+ p=c[2];
+ for(i=0;x>0;i++)
+ { sum+=(x*p/100);
+   x=(1-(p/100))*x;
+ }
+ printf("%d\n",sum);
+ return 0;
+ }
+ 
